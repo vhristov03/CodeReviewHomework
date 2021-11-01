@@ -7,3 +7,6 @@ class Car(models.Model):
     made = models.DateTimeField(auto_now_add=True)
     brand = models.CharField(max_length=50)
     description = models.TextField()
+
+    def __str__(self):
+        return self.color + ' ' + self.brand
