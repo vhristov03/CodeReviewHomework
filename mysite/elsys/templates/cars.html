@@ -1,4 +1,6 @@
 <body>
     {% include "navigation.html" %}
-    <h1> bla bla bla</h1>
+    {% for car in all_cars %}
+        <p>{{car}}</p>
+    {% endfor %}
 </body>

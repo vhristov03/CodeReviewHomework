@@ -1,0 +1,28 @@
+<body>
+    {% include "navigation.html" %}
+    <div style="float:left">
+        <h1>Arrival Times     </h1>
+        {% for a in arrivals%}
+            {{a}}
+            <br>
+        {% endfor %}
+    </div>
+
+    <div style="float:left">
+        <h1>Departure Times     </h1>
+        {% for d in departures %}
+            {{d}}
+            <br>
+        {%endfor%}
+    </div>
+
+    <div style="float:left">
+        <h1>Destinations     </h1>
+        {% for d in destinations %}
+            {{d}}
+            <br>
+        {% endfor %}
+    </div>
+    
+    
+</body>
